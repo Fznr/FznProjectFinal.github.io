@@ -1,8 +1,7 @@
 *{
-    padding :0;
-    margin : 0;
+    margin :0;
+    padding:0;
 }
-
 body{
     background-image: url(background.png);
     background-repeat: initial;
@@ -13,73 +12,70 @@ body{
     align-items: center;
     
 }
-.info{
-    height: 100vh;
-    width : 40vw;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.content{
-    height: 50%;
-    width: 80%;
-    background-color: rgb(248, 241, 177);
-    box-shadow: 5px 10px 1px rgb(2, 2, 2);
-}
-.cardBox
-{
-    width: 60vw;
-    height: 100vh;
-    background-color: rgba(205, 247, 246, 0.9);
-    /* position: relative; */
-    /* margin: 0 1%; */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding : 1% 0;
-    justify-content: space-around;
-}
-.card
-{
-    width: 20%;
-    height: 15%;
-    margin: 0 1%;
-    /* perspective: 100%; */
-    box-shadow: 5px 5px 8px rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-}
-.card :active
-{
-    background-color: greenyellow;
-    transform: scale(0.97);
-    transition: transform .1s;
-}
-.card.flip{
-    transform: rotateY(180deg);
-}
-.front,
-.back
-{
-    /* background-color:green; */
-    width : 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden; 
-    position: absolute;
-    border-style: solid;
-    border-radius: 3%;
-    background-color: rgb(98, 152, 202);
 
+.greeting{
+    background-color: rgb(248, 241, 177);
+    width: 70%;
+    height: 70%;
+    /* border-style: solid;
+    border-radius: 3%; */
+    box-shadow: 5px 10px 1px rgb(2, 2, 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.front{
-    transform: rotateY(180deg);
+
+.hellonama{
+    width: 100%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#words{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 380%;
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+/* #nama{
+    width : 70%;
+    height: 30%;
+    background-color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    box-shadow: 5px 10px 10px rgba(2, 2, 2, 0.7);
+} */
+#gambar{
+    width: 30%;
+    height: 60%;
+    margin-right: 10%;
+    
+}
+
+#nama{
+    margin-left: 5%;
+}
+input[type=text]{
+    width: 30vw;
+    height: 20vh;
+    font-size: xx-large;
+}
+input[type=submit]{
+    margin-top: 2%;
+    height: 5vh;
+    width: 30vw;
+    background: black;
+    border-radius: 20%;
+    color: white;
+    font-size: x-large;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
 }
