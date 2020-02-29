@@ -1,10 +1,16 @@
-const cards = document.querySelectorAll('.card');
 
 let klikOnce = false;
 let lockBoard = false;
 let firstCard, secondCard;
-var namaInput= document.getElementById("form")
 
+const startTheGame = (playerName) => {
+  document.querySelector('.greeting').style.display = "none";
+  document.querySelector('.cardBox').style.display = "flex";
+  document.querySelector('.playerName').innerText = 'Halo Pemain: ' + playerName;
+  
+};
+
+const cards = document.querySelectorAll('.card');
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
